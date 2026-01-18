@@ -33,12 +33,14 @@
       <section>
         <h3>私のおすすめ和菓子アンケートフォーム</h3>
         <form>
-          <p> 氏名 
+          <p> 氏名
             <label for="name">氏名</label>
-            <input id="name" type="text" name="name" placeholder="名前を入力してください”/>
+            <input id="name" type="text" name="name" placeholder="名前を入力してください"/>
           </p>
           <p> 年代
-          　<select>
+            <label for="name">年代</label>
+          　<select id="age" name="age"
+            <option value="">選択してください</option>
              <option>10代以下</option>
              <option>20代</option>
              <option>30代</option>
@@ -52,36 +54,37 @@
              <label><input type="radio" name="gender">その他</label>
           </p>
           <p>おすすめ和菓子の名称
-             <input type="text" palaceholder="例：みたらし団子">
-          </p>
-          <p> おすすめする理由<br>
-             <textarea></textarea>
-          </p>
-          <p>
-            <label>
-             <input type="checkbox">
-             個人情報保護方針に同意する
-            </label>
-          </p>
-          <p>
-           <input type="submit" value="送信”>
-           <input type="submit" value="リセット”>
-          </p>
-        </form>
-      </section>
-    </article>
-    <article>
-      <h3>テクノロジー</h3>
-      <section>
-       <h3>	SAMURAIが新しい動画をリリース
-        <p>SAMURAI公式YouTubeで新しい動画がリリースされました。<br>
-        動画の内容はHTML/CSSの解説です。
-        </p>
-      </section>
-    </article>
-  </main>
-  <footer>
-    <p>&copy;SAMURAIニュース</p>
-  </footer>
+              <div class="row">
+             <label for="wagashi">おすすめ</label>
+             <input id="wagashi" type="text" name="wagashi" placeholder="例：みたらし団子" />
+        </div>
+
+      <div class="row" style="align-items:flex-start;">
+        <label for="reason">理由</label>
+        <textarea id="reason" name="reason"></textarea>
+      </div>
+
+      <div class="row">
+        <label></label>
+        <label><input type="checkbox" name="agree" /> 個人情報保護方針に同意する</label>
+      </div>
+
+      <div class="buttons">
+        <input type="submit" value="送信" />
+        <input type="reset" value="リセット" />
+      </div>
+    </form>
+
+    <!-- テクノロジー -->
+    <h2>テクノロジー</h2>
+    <h3>SAMURAIが新しい動画をリリース</h3>
+    <p>
+      SAMURAI公式YouTubeで新しい動画がリリースされました。<br />
+      動画の内容はHTML/CSSの解説です。
+    </p>
+
+    <footer>©SAMURAIニュース</footer>
+  </div>
 </body>
 </html>
+           
